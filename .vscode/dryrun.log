@@ -1,0 +1,5 @@
+make --dry-run --keep-going --print-directory
+make: Entering directory '/home/ivancholakov/workspace/sfml-linux-start'
+g++ -Wall -Wextra -Wno-unused-parameter -std=c++17 -ggdb -Isrc -Llib src/Game.cpp src/Window.cpp src/main.cpp -o bin/main -lsfml-graphics -lsfml-window -lsfml-system
+make: Leaving directory '/home/ivancholakov/workspace/sfml-linux-start'
+ 
