@@ -1,5 +1,7 @@
 #pragma once
 #include <SFML/Graphics.hpp>
+#include "Textbox.h"
+#include <vector>
 
 struct SnakeSegment
 {
@@ -8,20 +10,19 @@ struct SnakeSegment
 };
 
 using SnakeContainer = std::vector<SnakeSegment>;
-
 enum class Direction
 {
+  None,
   Up,
   Down,
   Left,
-  Right,
-  None
+  Right
 };
 
 class Snake
 {
 public:
-  Snake(int l_blockSize);
+  Snake(int l_blockSize, Textbox *l_log);
   ~Snake();
 
   void SetDirection(Direction l_dir);
@@ -36,8 +37,9 @@ public:
   void Lose();
   void ToggleLost();
 
-  void Extend();
+  Direction GetPhysicalDirection();
 
+  void Extend();
   void Reset();
 
   void Move();
@@ -47,6 +49,7 @@ public:
 
 private:
   void CheckCollision();
+
   SnakeContainer m_snakeBody;
   int m_size;
   Direction m_dir;
@@ -55,4 +58,5 @@ private:
   int m_score;
   bool m_lost;
   sf::RectangleShape m_bodyRect;
+  Textbox *m_log;
 };

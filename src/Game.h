@@ -1,6 +1,9 @@
+#pragma once
 #include "Window.h"
-#include "Snake.h"
 #include "World.h"
+#include "Snake.h"
+#include "Textbox.h"
+
 class Game
 {
 public:
@@ -10,21 +13,18 @@ public:
   void HandleInput();
   void Update();
   void Render();
-  Window *GetWindow();
 
   sf::Time GetElapsed();
   void RestartClock();
 
+  Window *GetWindow();
+
 private:
-  void MoveSprite();
   Window m_window;
   sf::Clock m_clock;
-  sf::Time m_elapsed;
-
-  sf::Texture m_characterTeture;
-  sf::Sprite m_character;
-  sf::Vector2i m_increment;
+  float m_elapsed;
 
   World m_world;
   Snake m_snake;
+  Textbox m_textbox;
 };

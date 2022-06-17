@@ -1,11 +1,13 @@
+#pragma once
 #include <string>
+#include <SFML/Window.hpp>
 #include <SFML/Graphics.hpp>
 
 class Window
 {
 public:
   Window();
-  Window(const std::string &l_title, const sf::Vector2u &l_size);
+  Window(const std::string &title, const sf::Vector2u &size);
   ~Window();
 
   void BeginDraw();
@@ -15,6 +17,7 @@ public:
 
   bool IsDone();
   bool IsFullscreen();
+  sf::RenderWindow *GetRenderWindow();
   sf::Vector2u GetWindowSize();
 
   void ToggleFullscreen();
@@ -22,9 +25,9 @@ public:
   void Draw(sf::Drawable &l_drawable);
 
 private:
-  void Setup(const std::string &l_title, const sf::Vector2u &l_size);
-  void Destroy();
+  void Setup(const std::string title, const sf::Vector2u &size);
   void Create();
+  void Destroy();
 
   sf::RenderWindow m_window;
   sf::Vector2u m_windowSize;

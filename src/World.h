@@ -1,6 +1,7 @@
-
+#pragma once
 #include <SFML/Graphics.hpp>
 #include "Snake.h"
+
 class World
 {
 public:
@@ -10,6 +11,7 @@ public:
   int GetBlockSize();
 
   void RespawnApple();
+
   void Update(Snake &l_player);
   void Render(sf::RenderWindow &l_window);
 
