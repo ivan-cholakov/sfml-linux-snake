@@ -6,7 +6,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Wed Jun 15 07:26:34 2022
+# Make data base, printed on Thu Jun 16 21:14:28 2022
 
 # Variables
 
@@ -18,12 +18,10 @@ GDK_BACKEND = x11
 LC_ALL = C
 # environment
 NO_AT_BRIDGE = 1
-# makefile (from 'Makefile', line 8)
-SRC := src
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-f81bc937-cae6-49f9-9a66-6cbf4f1be70f.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-25b2a073-e4e3-4c24-94d7-743d08f76d66.sock
 # environment
-VSCODE_CWD = /home/ivancholakov/workspace/sfml-linux-start
+VSCODE_CWD = /home/ivancholakov/workspace/snake-game
 # environment
 WINDOWPATH = 2
 # environment
@@ -37,7 +35,7 @@ VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 # default
 .VARIABLES := 
 # environment
-PWD = /home/ivancholakov/workspace/sfml-linux-start
+PWD = /home/ivancholakov/workspace/snake-game
 # automatic
 %D = $(patsubst %/,%,$(dir $%))
 # environment
@@ -62,16 +60,18 @@ XAUTHORITY = /run/user/1000/gdm/Xauthority
 .LOADED := 
 # default
 .INCLUDE_DIRS = /usr/include /usr/local/include /usr/include
+# makefile (from 'Makefile', line 51)
+CMAKE_COMMAND = /usr/bin/cmake
 # environment
 GNOME_TERMINAL_SERVICE = :1.77
 # makefile
 MAKEFLAGS = pqrR
 # makefile
-CURDIR := /home/ivancholakov/workspace/sfml-linux-start
+CURDIR := /home/ivancholakov/workspace/snake-game
 # environment
 VSCODE_PIPE_LOGGING = true
 # environment
-APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
 # environment
 LESSOPEN = ||/usr/bin/lesspipe.sh %s
 # automatic
@@ -90,18 +90,22 @@ HISTSIZE = 1000
 XDG_SESSION_DESKTOP = gnome
 # makefile (from 'Makefile', line 1)
 MAKEFILE_LIST := Makefile
+# makefile (from 'Makefile', line 63)
+CMAKE_BINARY_DIR = /home/ivancholakov/workspace/snake-game
 # automatic
 @F = $(notdir $@)
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
-VSCODE_PID = 72732
+VSCODE_PID = 197192
 # environment
 XDG_SESSION_TYPE = x11
 # environment
 TMUX = /tmp/tmux-1000/default,2656,0
 # automatic
 ?D = $(patsubst %/,%,$(dir $?))
+# makefile (from 'Makefile', line 60)
+CMAKE_SOURCE_DIR = /home/ivancholakov/workspace/snake-game
 # environment
 SESSION_MANAGER = local/unix:@/tmp/.ICE-unix/1808,unix/unix:/tmp/.ICE-unix/1808
 # automatic
@@ -110,19 +114,13 @@ SESSION_MANAGER = local/unix:@/tmp/.ICE-unix/1808,unix/unix:/tmp/.ICE-unix/1808
 CHROME_DESKTOP = code-url-handler.desktop
 # environment
 DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus
-# makefile (from 'Makefile', line 10)
-LIB := lib
 # automatic
 <D = $(patsubst %/,%,$(dir $<))
 # environment
 VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
-# makefile (from 'Makefile', line 9)
-INCLUDE := src
-# makefile (from 'Makefile', line 15)
-MKDIR_P = mkdir -p
 # default
 MAKE_HOST := x86_64-redhat-linux-gnu
-# makefile
+# makefile (from 'Makefile', line 48)
 SHELL = /bin/sh
 # default
 MAKECMDGOALS := all
@@ -164,12 +162,16 @@ DESKTOP_SESSION = gnome
 ORIGINAL_XDG_CURRENT_DESKTOP = GNOME
 # 'override' directive
 GNUMAKEFLAGS := 
+# makefile (from 'Makefile', line 57)
+EQUALS = =
 # environment
 LOGNAME = ivancholakov
 # makefile
-.DEFAULT_GOAL := all
+.DEFAULT_GOAL := default_target
 # environment
 SYSTEMD_EXEC_PID = 1851
+# makefile (from 'Makefile', line 54)
+RM = /usr/bin/cmake -E rm -f
 # environment
 HISTCONTROL = ignoredups
 # environment
@@ -180,28 +182,22 @@ DISPLAY = :1
 USER = ivancholakov
 # default
 MAKE_VERSION := 4.3
-# makefile (from 'Makefile', line 13)
-EXECUTABLE := main
 # environment
 which_declare = typeset -f
 # environment
 DEBUGINFOD_URLS = https://debuginfod.fedoraproject.org/ 
-# makefile (from 'Makefile', line 5)
-CXX_FLAGS := -Wall -Wextra -Wno-unused-parameter -std=c++17 -ggdb
 # environment
 SSH_AGENT_PID = 1771
+# makefile (from 'Makefile', line 35)
+MAKESILENT = -s
 # environment
 _ = /usr/bin/make
-# makefile (from 'Makefile', line 7)
-BIN := bin
 # environment
 XDG_RUNTIME_DIR = /run/user/1000
 # environment
 COLORTERM = truecolor
 # environment
 XDG_SESSION_CLASS = user
-# makefile (from 'Makefile', line 12)
-LIBRARIES := -lsfml-graphics -lsfml-window -lsfml-system
 # environment
 VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
 # environment
@@ -228,8 +224,6 @@ ELECTRON_NO_ATTACH_CONSOLE = 1
 VTE_VERSION = 6800
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell nocomment grouped-target extra-prereqs archives jobserver output-sync check-symlink guile load
-# makefile (from 'Makefile', line 4)
-CXX := g++
 # environment
 XDG_MENU_PREFIX = gnome-
 # environment
@@ -237,7 +231,7 @@ TERM_PROGRAM_VERSION = 3.2a
 # environment
 GDMSESSION = gnome
 # variable set hash-table stats:
-# Load=113/1024=11%, Rehash=0, Collisions=16/158=10%
+# Load=110/1024=11%, Rehash=0, Collisions=11/149=7%
 
 # Pattern-specific Variable Values
 
@@ -245,72 +239,211 @@ GDMSESSION = gnome
 
 # Directories
 
-# src (device 39, inode 43483): 12 files, no impossibilities.
-# . (device 39, inode 70692): 14 files, no impossibilities.
+# RCS: could not be stat'd.
+# SCCS: could not be stat'd.
+# . (device 39, inode 84542): 18 files, no impossibilities.
 
-# 26 files, no impossibilities in 2 directories.
+# 18 files, no impossibilities in 3 directories.
 
 # Implicit Rules
 
-# No implicit rules.
+%: %,v
 
+%: RCS/%
+
+%: RCS/%,v
+
+%: SCCS/s.%
+
+%: s.%
+
+%.hpux_make_needs_suffix_list:
+
+# 6 implicit rules, 0 (0.0%) terminal.
 # Files
 
-# Not a target:
-src/Game.cpp:
-#  Implicit rule search has been done.
-#  Last modified 2022-06-14 21:39:26.43723366
-#  File has been updated.
-#  Successfully updated.
+src/main.cpp.i:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 193):
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sfml-linux-snake.dir/build.make CMakeFiles/sfml-linux-snake.dir/src/main.cpp.i
+
+src/Game.s: src/Game.cpp.s
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+src/main.i: src/main.cpp.i
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+depend:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 116):
+	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+
+src/main.s: src/main.cpp.s
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+src/Game.i: src/Game.cpp.i
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+default_target: all
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+ 
+#  File has not been updated.
+
+src/Window.i: src/Window.cpp.i
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+edit_cache/fast: edit_cache
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+src/Game.cpp.s:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 153):
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sfml-linux-snake.dir/build.make CMakeFiles/sfml-linux-snake.dir/src/Game.cpp.s
 
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-15 07:26:03.746038988
+#  Last modified 2022-06-16 07:36:40.062272224
 #  File has been updated.
 #  Successfully updated.
 
-# Not a target:
-src/main.cpp:
-#  Implicit rule search has been done.
-#  Last modified 2022-06-14 21:50:44.764942524
-#  File has been updated.
-#  Successfully updated.
+rebuild_cache:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 80):
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/usr/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 
-clean:
+.SILENT:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 34):
-	-rm $(BIN)/*
 
-bin/main: src/Game.cpp src/Window.cpp src/main.cpp
+sfml-linux-snake: cmake_check_build_system
+#  Phony target (prerequisite of .PHONY).
 #  Implicit rule search has not been done.
-#  Implicit/static pattern stem: ''
 #  File does not exist.
-#  File has been updated.
-#  Needs to be updated (-q is set).
-# automatic
-# @ := bin/main
-# automatic
-# * := 
-# automatic
-# < := src/Game.cpp
-# automatic
-# + := src/Game.cpp src/Window.cpp src/main.cpp
-# automatic
- 
-# % := 
-# automatic
-# ^ := src/Game.cpp src/Window.cpp src/main.cpp
-# automatic
-# ? := src/Game.cpp src/Window.cpp src/main.cpp
-# automatic
-# | := 
-# variable set hash-table stats:
-# Load=8/32=25%, Rehash=0, Collisions=6/18=33%
-#  recipe to execute (from 'Makefile', line 31):
-	$(CXX) $(CXX_FLAGS) -I$(INCLUDE) -L$(LIB) $^ -o $@ $(LIBRARIES)
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 124):
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sfml-linux-snake
+
+clean:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 97):
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 clean
+
+cmake_force:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+src/Window.o: src/Window.cpp.o
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+src/Game.cpp.i:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 145):
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sfml-linux-snake.dir/build.make CMakeFiles/sfml-linux-snake.dir/src/Game.cpp.i
+
+preinstall/fast:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 111):
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
+
+src/Window.cpp.s:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 177):
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sfml-linux-snake.dir/build.make CMakeFiles/sfml-linux-snake.dir/src/Window.cpp.s
+
+edit_cache:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 70):
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
+	/usr/bin/ccmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+
+rebuild_cache/fast: rebuild_cache
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+# Not a target:
+.hpux_make_needs_suffix_list:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+preinstall: all
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 106):
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
+
+src/Window.cpp.o:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 161):
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sfml-linux-snake.dir/build.make CMakeFiles/sfml-linux-snake.dir/src/Window.cpp.o
+
+src/main.o: src/main.cpp.o
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
 
 # Not a target:
 .DEFAULT:
@@ -318,70 +451,159 @@ bin/main: src/Game.cpp src/Window.cpp src/main.cpp
 #  Modification time never checked.
 #  File has not been updated.
 
-all: directories bin/main
+sfml-linux-snake/fast:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 129):
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sfml-linux-snake.dir/build.make CMakeFiles/sfml-linux-snake.dir/build
+
+all: cmake_check_build_system
+#  Phony target (prerequisite of .PHONY).
 #  Command line target.
-#  Implicit rule search has been done.
+#  Implicit rule search has not been done.
 #  File does not exist.
 #  File has been updated.
 #  Needs to be updated (-q is set).
 # variable set hash-table stats:
-# Load=0/32=0%, Rehash=0, Collisions=0/8=0%
+# Load=0/32=0%, Rehash=0, Collisions=0/6=0%
+#  recipe to execute (from 'Makefile', line 90):
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ivancholakov/workspace/snake-game/CMakeFiles /home/ivancholakov/workspace/snake-game//CMakeFiles/progress.marks
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ivancholakov/workspace/snake-game/CMakeFiles 0
 
-run: clean all
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-#  recipe to execute (from 'Makefile', line 27):
-	clear
-	./$(BIN)/$(EXECUTABLE)
-
-bin:
-#  Implicit rule search has not been done.
-#  Last modified 2022-06-15 07:26:17.524084244
-#  File has been updated.
-#  Successfully updated.
-#  recipe to execute (from 'Makefile', line 24):
-	${MKDIR_P} ${BIN}
-
-directories: bin
+help:
 #  Phony target (prerequisite of .PHONY).
 #  Implicit rule search has not been done.
 #  File does not exist.
-#  File has been updated.
-#  Successfully updated.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 206):
+	@echo "The following are some of the valid targets for this Makefile:"
+	@echo "... all (the default if no target is provided)"
+	@echo "... clean"
+	@echo "... depend"
+	@echo "... edit_cache"
+	@echo "... rebuild_cache"
+	@echo "... sfml-linux-snake"
+	@echo "... src/Game.o"
+	@echo "... src/Game.i"
+	@echo "... src/Game.s"
+	@echo "... src/Window.o"
+	@echo "... src/Window.i"
+	@echo "... src/Window.s"
+	@echo "... src/main.o"
+	@echo "... src/main.i"
+	@echo "... src/main.s"
 
-# Not a target:
-.SUFFIXES:
+clean/fast: clean
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+src/Window.s: src/Window.cpp.s
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+.NOTPARALLEL:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
 
-.PHONY: directories
+cmake_check_build_system:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: ''
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# automatic
+# @ := cmake_check_build_system
+# automatic
+# * := 
+# automatic
+# < := 
+# automatic
+# + := 
+# automatic
+# % := 
+# automatic
+# ^ := 
+# automatic
+# ? := 
+# automatic
+# | := 
+# variable set hash-table stats:
+# Load=8/32=25%, Rehash=0, Collisions=1/14=7%
+#  recipe to execute (from 'Makefile', line 233):
+	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+
+src/Game.o: src/Game.cpp.o
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+src/main.cpp.o:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 185):
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sfml-linux-snake.dir/build.make CMakeFiles/sfml-linux-snake.dir/src/main.cpp.o
+
+.SUFFIXES: .hpux_make_needs_suffix_list
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
 
-# Not a target:
-src/Window.cpp:
-#  Implicit rule search has been done.
-#  Last modified 2022-06-14 21:25:40.610928448
-#  File has been updated.
-#  Successfully updated.
+.PHONY: default_target cmake_force edit_cache edit_cache/fast rebuild_cache rebuild_cache/fast all clean clean/fast preinstall preinstall/fast depend sfml-linux-snake sfml-linux-snake/fast src/Game.o src/Game.cpp.o src/Game.i src/Game.cpp.i src/Game.s src/Game.cpp.s src/Window.o src/Window.cpp.o src/Window.i src/Window.cpp.i src/Window.s src/Window.cpp.s src/main.o src/main.cpp.o src/main.i src/main.cpp.i src/main.s src/main.cpp.s help cmake_check_build_system
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+src/main.cpp.s:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 201):
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sfml-linux-snake.dir/build.make CMakeFiles/sfml-linux-snake.dir/src/main.cpp.s
+
+src/Window.cpp.i:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 169):
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sfml-linux-snake.dir/build.make CMakeFiles/sfml-linux-snake.dir/src/Window.cpp.i
+
+src/Game.cpp.o:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+ 
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 137):
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sfml-linux-snake.dir/build.make CMakeFiles/sfml-linux-snake.dir/src/Game.cpp.o
 
 # files hash-table stats:
-# Load=13/1024=1%, Rehash=0, Collisions=0/38=0%
+# Load=41/1024=4%, Rehash=0, Collisions=6/149=4%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 37 / storage = 320 B / avg = 8 B
-# current buf: size = 8162 B / used = 320 B / count = 37 / avg = 8 B
+# strcache buffers: 1 (0) / strings = 69 / storage = 799 B / avg = 11 B
+# current buf: size = 8162 B / used = 799 B / count = 69 / avg = 11 B
 
-# strcache performance: lookups = 60 / hit rate = 38%
+# strcache performance: lookups = 236 / hit rate = 70%
 # hash-table stats:
-# Load=37/8192=0%, Rehash=0, Collisions=0/60=0%
-# Finished Make data base on Wed Jun 15 07:26:34 2022
+# Load=69/8192=1%, Rehash=0, Collisions=0/236=0%
+# Finished Make data base on Thu Jun 16 21:14:28 2022
 
  

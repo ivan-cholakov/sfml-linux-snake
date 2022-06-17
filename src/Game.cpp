@@ -1,6 +1,6 @@
 #include "Game.h"
 
-Game::Game() : m_window("Window", sf::Vector2u(800, 600))
+Game::Game() : m_window("Snake", sf::Vector2u(800, 600)), m_snake(m_world.GetBlockSize()), m_world(sf::Vector2u(800, 600))
 {
   m_characterTeture.loadFromFile("../assets/character.png");
   m_character.setTexture(m_characterTeture);

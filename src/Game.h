@@ -1,4 +1,6 @@
 #include "Window.h"
+#include "Snake.h"
+#include "World.h"
 class Game
 {
 public:
@@ -22,4 +24,7 @@ private:
   sf::Texture m_characterTeture;
   sf::Sprite m_character;
   sf::Vector2i m_increment;
+
+  World m_world;
+  Snake m_snake;
 };

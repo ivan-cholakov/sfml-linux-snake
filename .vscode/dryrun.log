@@ -1,5 +1,27 @@
-make --dry-run --keep-going --print-directory
-make: Entering directory '/home/ivancholakov/workspace/sfml-linux-start'
-g++ -Wall -Wextra -Wno-unused-parameter -std=c++17 -ggdb -Isrc -Llib src/Game.cpp src/Window.cpp src/main.cpp -o bin/main -lsfml-graphics -lsfml-window -lsfml-system
-make: Leaving directory '/home/ivancholakov/workspace/sfml-linux-start'
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/ivancholakov/workspace/snake-game'
+/usr/bin/cmake -S/home/ivancholakov/workspace/snake-game -B/home/ivancholakov/workspace/snake-game --check-build-system CMakeFiles/Makefile.cmake 0
+/usr/bin/cmake -E cmake_progress_start /home/ivancholakov/workspace/snake-game/CMakeFiles /home/ivancholakov/workspace/snake-game//CMakeFiles/progress.marks
+make -s -f CMakeFiles/Makefile2 all
+make[1]: Entering directory '/home/ivancholakov/workspace/snake-game'
+make -s -f CMakeFiles/sfml-linux-snake.dir/build.make CMakeFiles/sfml-linux-snake.dir/depend
+make[2]: Entering directory '/home/ivancholakov/workspace/snake-game'
+cd /home/ivancholakov/workspace/snake-game && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/ivancholakov/workspace/snake-game /home/ivancholakov/workspace/snake-game /home/ivancholakov/workspace/snake-game /home/ivancholakov/workspace/snake-game /home/ivancholakov/workspace/snake-game/CMakeFiles/sfml-linux-snake.dir/DependInfo.cmake --color=
+make[2]: Leaving directory '/home/ivancholakov/workspace/snake-game'
+make -s -f CMakeFiles/sfml-linux-snake.dir/build.make CMakeFiles/sfml-linux-snake.dir/build
+ 
+make[2]: Entering directory '/home/ivancholakov/workspace/snake-game'
+/usr/bin/cmake -E cmake_echo_color --switch= --green --progress-dir=/home/ivancholakov/workspace/snake-game/CMakeFiles --progress-num=1 "Building CXX object CMakeFiles/sfml-linux-snake.dir/src/Game.cpp.o"
+/usr/bin/c++  -I/home/ivancholakov/workspace/snake-game/src -std=gnu++17 -MD -MT CMakeFiles/sfml-linux-snake.dir/src/Game.cpp.o -MF CMakeFiles/sfml-linux-snake.dir/src/Game.cpp.o.d -o CMakeFiles/sfml-linux-snake.dir/src/Game.cpp.o -c /home/ivancholakov/workspace/snake-game/src/Game.cpp
+/usr/bin/cmake -E cmake_echo_color --switch= --green --progress-dir=/home/ivancholakov/workspace/snake-game/CMakeFiles --progress-num=2 "Building CXX object CMakeFiles/sfml-linux-snake.dir/src/Window.cpp.o"
+/usr/bin/c++  -I/home/ivancholakov/workspace/snake-game/src -std=gnu++17 -MD -MT CMakeFiles/sfml-linux-snake.dir/src/Window.cpp.o -MF CMakeFiles/sfml-linux-snake.dir/src/Window.cpp.o.d -o CMakeFiles/sfml-linux-snake.dir/src/Window.cpp.o -c /home/ivancholakov/workspace/snake-game/src/Window.cpp
+/usr/bin/cmake -E cmake_echo_color --switch= --green --progress-dir=/home/ivancholakov/workspace/snake-game/CMakeFiles --progress-num=3 "Building CXX object CMakeFiles/sfml-linux-snake.dir/src/main.cpp.o"
+/usr/bin/c++  -I/home/ivancholakov/workspace/snake-game/src -std=gnu++17 -MD -MT CMakeFiles/sfml-linux-snake.dir/src/main.cpp.o -MF CMakeFiles/sfml-linux-snake.dir/src/main.cpp.o.d -o CMakeFiles/sfml-linux-snake.dir/src/main.cpp.o -c /home/ivancholakov/workspace/snake-game/src/main.cpp
+/usr/bin/cmake -E cmake_echo_color --switch= --green --bold --progress-dir=/home/ivancholakov/workspace/snake-game/CMakeFiles --progress-num=4 "Linking CXX executable bin/sfml-linux-snake"
+/usr/bin/cmake -E cmake_link_script CMakeFiles/sfml-linux-snake.dir/link.txt --verbose=
+make[2]: Leaving directory '/home/ivancholakov/workspace/snake-game'
+/usr/bin/cmake -E cmake_echo_color --switch= --progress-dir=/home/ivancholakov/workspace/snake-game/CMakeFiles --progress-num=1,2,3,4 "Built target sfml-linux-snake"
+make[1]: Leaving directory '/home/ivancholakov/workspace/snake-game'
+/usr/bin/cmake -E cmake_progress_start /home/ivancholakov/workspace/snake-game/CMakeFiles 0
+make: Leaving directory '/home/ivancholakov/workspace/snake-game'
  
